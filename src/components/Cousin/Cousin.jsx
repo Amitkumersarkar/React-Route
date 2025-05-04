@@ -1,10 +1,11 @@
 import Wife from "../Wife/Wife";
 
-const Myself = ({asset}) => {
+const Cousin = ({ name, asset }) => {
 
     return (
         <div>
-            <h2>Myself</h2>
+            <h2>Cousin : </h2>
+            <p>{name}</p>
             <section>
                 <Wife asset={asset}></Wife>
             </section>
@@ -12,4 +13,4 @@ const Myself = ({asset}) => {
     );
 };
 
-export default Myself;
+export default Cousin;

@@ -3,14 +3,14 @@ import Dad from "../Dad/Dad";
 import Uncle from "../Uncle/Uncle";
 import './GrandPa.css';
 const GrandPa = () => {
-
+    const asset = 'diamond';
     return (
         <div className="grandpa">
             <h2>GrandPa</h2>
             <section className="flex">
-                <Dad></Dad>
-                <Uncle></Uncle>
-                <Aunty></Aunty>
+                <Dad asset={asset}></Dad>
+                <Uncle asset={asset}></Uncle>
+                <Aunty asset={asset}></Aunty>
             </section>
         </div>
     );
